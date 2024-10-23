@@ -25,14 +25,15 @@
             padding: 20px;
         }
 
-        /* Estilo da galeria de imagens */
+        /* Estilo da galeria de mídia */
         .gallery {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
             gap: 15px;
+            margin-bottom: 40px;
         }
 
-        .gallery img {
+        .gallery img, .gallery video {
             width: 100%;
             height: auto;
             border-radius: 10px;
@@ -40,9 +41,15 @@
             transition: transform 0.2s, box-shadow 0.2s;
         }
 
-        .gallery img:hover {
+        .gallery img:hover, .gallery video:hover {
             transform: scale(1.05);
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .section-title {
+            font-size: 1.5em;
+            color: #2e8b57;
+            margin-bottom: 10px;
         }
 
         footer {
@@ -63,8 +70,9 @@
     </header>
 
     <main>
+        <div class="section-title">Galeria de Imagens</div>
         <div class="gallery">
-            <!-- 37 imagens, 6 vídeos -->
+            <!-- 37 imagens -->
             <img src="img1.jpeg" alt="Imagem 1">
             <img src="img2.jpeg" alt="Imagem 2">
             <img src="img3.jpeg" alt="Imagem 3">
@@ -102,24 +110,35 @@
             <img src="img35.jpeg" alt="Imagem 35">
             <img src="img36.jpeg" alt="Imagem 36">
             <img src="img37.jpeg" alt="Imagem 37">
-            		<video width="400" controls>
-                        <source src="vid1.mp4" type="video/mp4">
-                    </video><br>
-                	<video width="400" controls>
-                        <source src="vid2.mp4" type="video/mp4">
-                    </video><br>
-            <video width="400" controls>
-                        <source src="vid3.mp4" type="video/mp4">
-                    </video><br>
-            <video width="400" controls>
-                        <source src="vid4.mp4" type="video/mp4">
-                    </video><br>
-            <video width="400" controls>
-                        <source src="vid5.mp4" type="video/mp4">
-                    </video><br>
-            <video width="400" controls>
-                        <source src="vid6.mp4" type="video/mp4">
-                    </video><br>
+        </div>
+
+        <div class="section-title">Galeria de Vídeos</div>
+        <div class="gallery">
+            <!-- 6 vídeos -->
+            <video controls>
+                <source src="vid1.mp4" type="video/mp4">
+                Seu navegador não suporta o vídeo.
+            </video>
+            <video controls>
+                <source src="vid2.mp4" type="video/mp4">
+                Seu navegador não suporta o vídeo.
+            </video>
+            <video controls>
+                <source src="vid3.mp4" type="video/mp4">
+                Seu navegador não suporta o vídeo.
+            </video>
+            <video controls>
+                <source src="vid4.mp4" type="video/mp4">
+                Seu navegador não suporta o vídeo.
+            </video>
+            <video controls>
+                <source src="vid5.mp4" type="video/mp4">
+                Seu navegador não suporta o vídeo.
+            </video>
+            <video controls>
+                <source src="vid6.mp4" type="video/mp4">
+                Seu navegador não suporta o vídeo.
+            </video>
         </div>
     </main>
 
