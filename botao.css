@@ -1,4 +1,4 @@
-/* Estilo básico do link como botão */
+/* botão */
 .botao-realce {
     display: inline-block;
     padding: 10px 20px;
@@ -11,14 +11,14 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Efeito de realce no hover */
+/* efeito ao passar o mouse */
 .botao-realce:hover {
     background-color: greenyellow;
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
     transform: scale(1.05);
 }
 
-/* Adicionando um efeito ao clicar */
+/* efeito do clique */
 .botao-realce:active {
     background-color: black;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
